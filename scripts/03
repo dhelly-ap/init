@@ -1,0 +1,9 @@
+#!/bin/bash
+status="(dead)"
+check=$(sudo service ssh status | awk '/dead/ {print $3}')
+if [ "$status" == "$check" ]
+then
+sudo service ssh restart | echo "ssh restarted"
+else
+echo "It's ok"
+fi

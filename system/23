@@ -1,0 +1,7 @@
+graphic session:
+1.get su
+2.put login
+3.put new user
+
+ssh session:
+ssh new_user_name@ip
